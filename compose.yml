@@ -1,0 +1,11 @@
+services:
+  web:
+    build: .
+    ports:
+      - "8000:5000"
+    volumes:
+        - ./:/usr/src/app
+    platform: linux/amd64
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+
