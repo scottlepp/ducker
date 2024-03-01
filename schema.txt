@@ -1,0 +1,35 @@
+customers (customer_id(VARCHAR), firstname(VARCHAR), lastname(VARCHAR), city(VARCHAR), address(VARCHAR), email(VARCHAR)):
+5 row sample:
+|    |   customer_id | firstname   | lastname   | city      | address      | email      |
+|---:|--------------:|:------------|:-----------|:----------|:-------------|:-----------|
+|  0 |    1122334455 | Ann         | O'Brien    | Rotterdam | 1 Jervis St. | ann@uva.nl |
+
+laptops (model(VARCHAR), speed(DOUBLE), ram(INTEGER), hd(INTEGER), screen(DOUBLE), price(DOUBLE)):
+5 row sample:
+|    |   model |   speed |   ram |   hd |   screen |   price |
+|---:|--------:|--------:|------:|-----:|---------:|--------:|
+|  0 |    2001 |       2 |  2048 |  240 |     20.1 |    3673 |
+
+pcs (model(VARCHAR), speed(DOUBLE), ram(INTEGER), hd(INTEGER), price(DOUBLE)):
+5 row sample:
+|    |   model |   speed |   ram |   hd |   price |
+|---:|--------:|--------:|------:|-----:|--------:|
+|  0 |    1001 |    2.66 |  1024 |  250 |    2114 |
+
+printers (model(VARCHAR), color(VARCHAR), type(VARCHAR), price(DOUBLE)):
+5 row sample:
+|    |   model | color   | type    |   price |
+|---:|--------:|:--------|:--------|--------:|
+|  0 |    3001 | TRUE    | ink-jet |      99 |
+
+products (maker(VARCHAR), model(VARCHAR), type(VARCHAR)):
+5 row sample:
+|    | maker   |   model | type   |
+|---:|:--------|--------:|:-------|
+|  0 | A       |    1001 | pc     |
+
+sales (customer_id(VARCHAR), model(VARCHAR), quantity(INTEGER), day(DATE), paid(DOUBLE), type_of_payment(VARCHAR)):
+5 row sample:
+|    |   customer_id |   model |   quantity | day                 |   paid | type_of_payment   |
+|---:|--------------:|--------:|-----------:|:--------------------|-------:|:------------------|
+|  0 |    1122334455 |    2010 |          1 | 2020-12-19 00:00:00 |   2300 | mastercard credit |
